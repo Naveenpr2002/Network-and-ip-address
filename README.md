@@ -1,3 +1,44 @@
+
+1. What is a Network?
+
+A network allows devices to:
+
+Send/receive data
+Share files
+Access internet
+Communicate with servers
+Use printers, databases, cloud services, etc.
+Common Devices in a Network
+6
+Main components
+Router → Connects different networks
+Switch → Connects devices inside same network
+Server → Provides services/data
+Client → User devices
+Firewall → Security protection
+2. IP Address
+
+Every device in a network gets an IP address.
+
+Example IPv4:
+
+192.168.1.10
+
+Think of it like a house address for devices.
+
+Two main versions:
+
+IPv4 → 192.168.1.1
+IPv6 → 2001:db8::1
+
+
+
+
+
+
+
+
+
 An IP address (Internet Protocol address) is a unique number assigned to a device connected to a network or the internet.
 ## IPv4 Explained
 
@@ -108,7 +149,92 @@ Example:
 | `0.0.0.0`         | Default/unknown              |
 | `255.255.255.255` | Broadcast                    |
 
----
+
+
+
+
+What is a Subnet?
+
+A subnet (subnetwork) is a smaller network created from a large network.
+
+Instead of keeping all devices in one huge network, we divide them into smaller sections.
+
+Example:
+
+Main Network:
+192.168.1.0/24
+
+Subnets:
+192.168.1.0/26
+192.168.1.64/26
+192.168.1.128/26
+192.168.1.192/26
+Why Subnets are Used
+1. Better Performance
+
+Smaller networks reduce unnecessary traffic.
+
+2. Security
+
+Different departments can be separated.
+
+Example:
+
+HR subnet
+Finance subnet
+Developers subnet
+3. Easier Management
+
+Admins can organize networks properly.
+
+4. Efficient IP Usage
+
+Avoid wasting IP addresses.
+
+4. Understanding Network Parts
+
+Example IP:
+
+192.168.1.10/24
+
+This has:
+
+Network part
+Host part
+/24 means:
+
+First 24 bits are network bits.
+
+Subnet mask:
+
+255.255.255.0
+5. Subnet Mask
+
+Subnet mask identifies:
+
+Which part is network
+Which part is host
+Example
+
+IP:
+
+192.168.1.10
+
+Subnet mask:
+
+255.255.255.0
+
+This means:
+
+Network: 192.168.1.0
+Host:    .10
+
+
+
+
+
+
+
 
 ## Subnet Mask
 
@@ -146,25 +272,163 @@ Example:
 
 ---
 
-## Limitation of IPv4
 
-IPv4 supports about:
 
-2^{32} \approx 4.3 \times 10^9
+What is a Subnet?
 
-Around **4.3 billion addresses** only.
+A subnet (subnetwork) is a smaller network created from a large network.
 
-Because internet devices increased massively, IPv6 was introduced.
+Instead of keeping all devices in one huge network, we divide them into smaller sections.
 
----
+Example:
 
-## Real Example Flow
+Main Network:
+192.168.1.0/24
 
-When you open a website:
+Subnets:
+192.168.1.0/26
+192.168.1.64/26
+192.168.1.128/26
+192.168.1.192/26
+Why Subnets are Used
+1. Better Performance
 
-1. Your device has an IP
-2. Website server has an IP
-3. Routers use these IPs to send data packets
-4. Response comes back to your device
+Smaller networks reduce unnecessary traffic.
 
-Just like sending letters using postal addresses.
+2. Security
+
+Different departments can be separated.
+
+Example:
+
+HR subnet
+Finance subnet
+Developers subnet
+3. Easier Management
+
+Admins can organize networks properly.
+
+4. Efficient IP Usage
+
+Avoid wasting IP addresses.
+
+4. Understanding Network Parts
+
+Example IP:
+
+192.168.1.10/24
+
+This has:
+
+Network part
+Host part
+/24 means:
+
+First 24 bits are network bits.
+
+Subnet mask:
+
+255.255.255.0
+5. Subnet Mask
+
+Subnet mask identifies:
+
+Which part is network
+Which part is host
+Example
+
+IP:
+
+192.168.1.10
+
+Subnet mask:
+
+255.255.255.0
+
+This means:
+
+Network: 192.168.1.0
+Host:    .10
+
+
+EXAMPLE OF SUBNET CALCULATION 
+
+What is a Subnet?
+
+A subnet (subnetwork) is a smaller network created from a large network.
+
+Instead of keeping all devices in one huge network, we divide them into smaller sections.
+
+Example:
+
+Main Network:
+192.168.1.0/24
+
+Subnets:
+192.168.1.0/26
+192.168.1.64/26
+192.168.1.128/26
+192.168.1.192/26
+Why Subnets are Used
+1. Better Performance
+
+Smaller networks reduce unnecessary traffic.
+
+2. Security
+
+Different departments can be separated.
+
+Example:
+
+HR subnet
+Finance subnet
+Developers subnet
+3. Easier Management
+
+Admins can organize networks properly.
+
+4. Efficient IP Usage
+
+Avoid wasting IP addresses.
+
+4. Understanding Network Parts
+
+Example IP:
+
+192.168.1.10/24
+
+This has:
+
+Network part
+Host part
+/24 means:
+
+First 24 bits are network bits.
+
+Subnet mask:
+
+255.255.255.0
+5. Subnet Mask
+
+Subnet mask identifies:
+
+Which part is network
+Which part is host
+Example
+
+IP:
+
+192.168.1.10
+
+Subnet mask:
+
+255.255.255.0
+
+This means:
+
+Network: 192.168.1.0
+Host:    .10
+
+
+
+
